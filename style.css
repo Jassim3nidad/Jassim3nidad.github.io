@@ -18,8 +18,8 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text */
 }
 
 header{
@@ -51,7 +51,7 @@ header{
 
 nav a{
     font-size: 1.8rem;
-    color: white;
+    color: #333; /* Dark text */
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -75,7 +75,7 @@ nav a.active{
         border-bottom: 3px solid #D2042D;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
-        background-color: #161616;
+        background-color: #fff; /* White background */
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
 
@@ -107,7 +107,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-color: #f8f8f8; /* Light background */
 }
 
 .home .home-content h1{
@@ -164,7 +164,7 @@ span{
 }
 
 .social-icons a:hover{
-    color: black;
+    color: white;
     transform: scale(1.3) translateY(-5px);
     background-color: #D2042D;
     box-shadow: 0  0 25px #D2042D;
@@ -173,7 +173,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: #fff; /* Light button background */
     border-radius: 4rem;
     font-size: 1.6rem;
     color: #D2042D;
@@ -209,7 +209,7 @@ span{
 
 .typing-text span::after{
     content: "";
-    background-color: black;
+    background-color: white; /* Light background for cursor */
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
