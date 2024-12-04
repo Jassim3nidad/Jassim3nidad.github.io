@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <a href="#" class="logo">Jassim</a>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#" class="active"> Home</a>
+            <a href="#" >Services</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
         </nav>
     </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome! I'm a web developer passionate about creating beautiful and functional designs.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of the first project.</p>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of the second project.</p>
+        <div class="home-content">
+            <h1>Hi, It's <span>Jassim</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Kissy face, kissy face sent to your phone, but
+I'm trying to kiss your lips for real (uh-huh, uh-huh)
+Red hearts, red hearts, that's what I'm on, yeah
+Come give me somethin' I can feel, oh-oh-oh</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
         </div>
     </section>
-
-    <footer>
-        <p>© 2024 My Portfolio. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
