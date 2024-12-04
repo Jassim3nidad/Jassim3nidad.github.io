@@ -1,121 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">My Logo</div>
+    <ul class="nav-links">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="profile-pic.jpg" alt="Profile Picture" style="width: 100%; border-radius: 50%;">
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <a href="./assets/resume-example.pdf" class="btn btn-color-2">
-            Download CV
-          </a>
-          <a href="#contact" class="btn btn-color-1">
-            Contact Info
-          </a>
-        </div>
+        <h1 class="title">Welcome to My Portfolio</h1>
+        <p class="section__text__p1">Hi, I'm [Your Name]</p>
+        <p class="section__text__p2">A Passionate Developer</p>
         <div id="socials-container">
-          <a href="https://linkedin.com/">
-            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-          </a>
-          <a href="https://github.com/">
-            <img src="./assets/github.png" alt="My Github profile" class="icon" />
-          </a>
+          <a href="https://github.com/" target="_blank"><img class="icon" src="github-icon.png" alt="GitHub"></a>
+          <a href="https://linkedin.com/" target="_blank"><img class="icon" src="linkedin-icon.png" alt="LinkedIn"></a>
         </div>
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about-containers section-container">
+      <div class="section__pic-container">
+        <img src="about-pic.jpg" alt="About Me Picture" style="width: 100%; border-radius: 2rem;">
       </div>
-    </section>
-    <section id="experience">
-      <!-- Similar to the original but without JavaScript -->
-    </section>
-    <section id="projects">
-      <!-- Similar to the original but without JavaScript -->
-    </section>
-    <section id="contact">
-      <!-- Similar to the original but without JavaScript -->
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
-    </footer>
-  </body>
+      <div class="details-container">
+        <p>Detail about your experience, background, or journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2 class="title">Experience</h2>
+    <div class="experience-details-container">
+      <div class="article-container">
+        <article>
+          <img class="icon" src="experience-icon1.png" alt="Experience 1">
+          <p>Job Title 1</p>
+        </article>
+        <article>
+          <img class="icon" src="experience-icon2.png" alt="Experience 2">
+          <p>Job Title 2</p>
+        </article>
+        <article>
+          <img class="icon" src="experience-icon3.png" alt="Experience 3">
+          <p>Job Title 3</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="title">Projects</h2>
+    <div class="section-container">
+      <div class="color-container">
+        <img class="project-img" src="project1.jpg" alt="Project 1">
+        <h3 class="project-title">Project 1</h3>
+        <a href="#" class="btn project-btn">View</a>
+      </div>
+      <div class="color-container">
+        <img class="project-img" src="project2.jpg" alt="Project 2">
+        <h3 class="project-title">Project 2</h3>
+        <a href="#" class="btn project-btn">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="title">Contact Me</h2>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img class="contact-icon email-icon" src="email-icon.png" alt="Email">
+        <p>yourname@example.com</p>
+      </div>
+      <div class="contact-info-container">
+        <img class="contact-icon" src="phone-icon.png" alt="Phone">
+        <p>+123-456-7890</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
