@@ -1,31 +1,43 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
   line-height: 1.6;
 }
 .container {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: auto;
-  overflow: hidden;
 }
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Header */
 header {
   background: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header h1 {
   float: left;
+  margin-left: 20px;
+}
+header nav {
+  float: right;
+  margin-right: 20px;
 }
 header nav ul {
   list-style: none;
+  margin: 0;
   padding: 0;
-  float: right;
-}
-header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: flex;
+  gap: 1rem;
 }
 header nav ul li a {
   color: #fff;
@@ -35,87 +47,73 @@ header nav ul li a {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 0;
+  padding: 4rem 0;
   background: #f4f4f4;
 }
 .hero .profile-img {
-  border-radius: 50%;
   width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
-.hero h2 span {
-  color: #333;
-}
-.hero .buttons button {
-  margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  background: #333;
+.hero .btn {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
   color: #fff;
-  cursor: pointer;
-}
-.hero .social-links a {
-  margin: 0 10px;
-  color: #333;
+  background: #333;
+  border: none;
   text-decoration: none;
+  display: inline-block;
+}
+.hero .btn-alt {
+  background: #555;
 }
 
 /* About Section */
-#about {
-  padding: 20px 0;
+.about {
+  background: #f9f9f9;
+  padding: 2rem 0;
 }
 .about-content {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
-.about-content img {
+.about img {
   width: 200px;
-  margin-right: 20px;
+  border-radius: 10px;
 }
 
 /* Experience Section */
-#experience .skills {
+.experience {
+  padding: 2rem 0;
+}
+.experience .skills {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
-#experience ul {
+.skill-category ul {
   list-style: none;
   padding: 0;
 }
 
 /* Projects Section */
-#projects .project-cards {
+.projects .project-cards {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .project-card {
   background: #f4f4f4;
-  padding: 20px;
-  width: 30%;
+  padding: 1rem;
   text-align: center;
-}
-
-/* Contact Section */
-#contact {
-  text-align: center;
-  padding: 20px 0;
+  border-radius: 10px;
 }
 
 /* Footer */
 footer {
+  text-align: center;
+  padding: 1rem 0;
   background: #333;
   color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-footer nav ul {
-  list-style: none;
-  padding: 0;
-}
-footer nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-footer nav ul li a {
-  color: #fff;
-  text-decoration: none;
 }
