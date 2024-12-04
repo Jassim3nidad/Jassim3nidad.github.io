@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>John Doe</h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -21,14 +22,15 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <img src="profile.jpg" alt="John Doe" class="profile-img">
       <h2>Hello, I'm <span>John Doe</span></h2>
       <p>Frontend Developer</p>
       <div class="buttons">
-        <button>Download CV</button>
-        <button>Contact Info</button>
+        <a href="#" class="btn">Download CV</a>
+        <a href="#contact" class="btn btn-alt">Contact Me</a>
       </div>
       <div class="social-links">
         <a href="#">LinkedIn</a>
@@ -37,64 +39,73 @@
     </div>
   </section>
 
-  <section id="about">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
       <div class="about-content">
-        <img src="about-img.jpg" alt="About">
+        <img src="about-img.jpg" alt="About Me">
         <div>
-          <p><strong>Experience:</strong> 2+ years</p>
-          <p><strong>Education:</strong> B.Sc, M.Sc</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, labore.</p>
+          <h3>Experience</h3>
+          <p>2+ years in Frontend Development</p>
+          <h3>Education</h3>
+          <p>B.Sc in Computer Science | M.Sc in Web Development</p>
+          <p>
+            I specialize in building responsive and visually engaging user interfaces
+            with a strong focus on delivering high-quality results.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="experience">
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
     <div class="container">
       <h2>Experience</h2>
       <div class="skills">
-        <div>
+        <div class="skill-category">
           <h3>Frontend Development</h3>
           <ul>
-            <li>HTML - Experienced</li>
-            <li>CSS - Experienced</li>
-            <li>SASS - Intermediate</li>
-            <li>JavaScript - Basic</li>
-            <li>TypeScript - Basic</li>
-            <li>Material UI - Intermediate</li>
+            <li>HTML - Advanced</li>
+            <li>CSS - Advanced</li>
+            <li>JavaScript - Intermediate</li>
+            <li>React.js - Intermediate</li>
           </ul>
         </div>
-        <div>
+        <div class="skill-category">
           <h3>Backend Development</h3>
           <ul>
-            <li>PostgreSQL - Basic</li>
             <li>Node.js - Intermediate</li>
             <li>Express.js - Intermediate</li>
-            <li>Git - Intermediate</li>
+            <li>MongoDB - Basic</li>
+            <li>Git - Advanced</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-cards">
         <div class="project-card">
           <h3>Project One</h3>
+          <p>Web app for real-time collaboration.</p>
           <a href="#">GitHub</a>
           <a href="#">Live Demo</a>
         </div>
         <div class="project-card">
           <h3>Project Two</h3>
+          <p>Mobile-friendly e-commerce platform.</p>
           <a href="#">GitHub</a>
           <a href="#">Live Demo</a>
         </div>
         <div class="project-card">
           <h3>Project Three</h3>
+          <p>Food delivery application with tracking.</p>
           <a href="#">GitHub</a>
           <a href="#">Live Demo</a>
         </div>
@@ -102,27 +113,22 @@
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: example@email.com</p>
       <div class="social-links">
         <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2023 John Doe. All Rights Reserved</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </footer>
 </body>
