@@ -1,73 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Jassim</div>
-    <ul class="nav-links">
-      <li><a href="#profile">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Profile Section -->
-  <section id="profile" class="full-page">
-    <div class="centered">
-      <h1>Hi, I'm Trinidad, Jassim</h1>
-      <p>A passionate developer bringing ideas to life!</p>
-      <div id="socials-container">
-        <a href="https://github.com/Jassim3nidad" target="_blank"><img class="icon" src="github.svg alt="GitHub"></a>
-      </div>
-    </div>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I'm a web developer passionate about creating beautiful and functional designs.</p>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="full-page">
-    <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus urna sit amet ligula tincidunt, eget facilisis risus feugiat.</p>
-  </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the first project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the second project.</p>
+        </div>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="full-page">
-    <h2>Experience</h2>
-    <p>Over 5 years of experience in web development, working with technologies like React, Node.js, and more.</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="full-page">
-    <h2>Projects</h2>
-    <p>Here are some of my recent works.</p>
-    <div class="projects-container">
-      <div class="project">
-        <img src="project1.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="full-page">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me!</p>
-    <p>Email: yourname@example.com</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
